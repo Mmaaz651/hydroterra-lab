@@ -1,7 +1,8 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, Atom } from "lucide-react";
+import { Menu, X, Leaf } from "lucide-react";
 import { useState } from "react";
+import upeiLogo from "@assets/upei_logo_1768275866728.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -22,12 +23,13 @@ export function Navigation() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <Atom className="h-6 w-6 text-primary" />
+              <Leaf className="h-6 w-6 text-primary" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold font-display leading-tight tracking-tight text-primary">AIMMLab</span>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold">AI & Math Modelling</span>
+              <span className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold">Agriculture & Spatial Data</span>
             </div>
+            <img src={upeiLogo} alt="UPEI Logo" className="h-12 ml-4 hidden sm:block" />
           </Link>
 
           {/* Desktop Nav */}

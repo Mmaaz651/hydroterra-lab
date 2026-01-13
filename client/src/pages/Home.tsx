@@ -1,6 +1,6 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Link } from "wouter";
-import { ArrowRight, Activity, Globe, Droplets, Database, ChevronRight } from "lucide-react";
+import { ArrowRight, Leaf, CloudRain, Droplets, MapPin, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useNewsList, useResearchAreas } from "@/hooks/use-lab-data";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -29,11 +29,11 @@ export default function Home() {
                 Welcome to AIMMLab
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-[1.1] tracking-tight">
-                Artificial Intelligence & Mathematical Modelling
+                AI for Sustainable Agriculture & Climate Resilience
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-xl">
-                We design and deploy AI and mathematical methodologies to enhance public health preparedness 
-                and response to emerging infectious disease outbreaks and environmental challenges.
+                We design and deploy AI and mathematical methodologies to advance precision agriculture, 
+                analyze precipitation patterns, monitor soil moisture, and leverage spatial data for sustainable food systems.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link href="/research">
@@ -73,10 +73,10 @@ export default function Home() {
 
                  <div className="relative text-center space-y-4">
                    <div className="mx-auto w-24 h-24 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
-                     <Activity className="w-10 h-10 text-white" />
+                     <Leaf className="w-10 h-10 text-white" />
                    </div>
-                   <h3 className="text-2xl font-display font-semibold">Data Driven Solutions</h3>
-                   <p className="text-sm text-white/70">Bridging the gap between theory and application</p>
+                   <h3 className="text-2xl font-display font-semibold">Data Driven Agriculture</h3>
+                   <p className="text-sm text-white/70">Bridging spatial data and sustainable farming</p>
                  </div>
                </div>
             </motion.div>
@@ -89,38 +89,37 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader 
             title="Our Research Areas" 
-            subtitle="We focus on developing novel methodologies for complex socio-ecological challenges."
+            subtitle="We focus on developing novel methodologies for sustainable agriculture and climate resilience."
             align="center"
           />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Hardcoded for immediate visual if DB empty, but wired to be dynamic */}
             <ResearchCard 
-              icon={<Activity className="w-8 h-8" />}
-              title="Disease Modeling"
-              desc="Mathematical models for infectious disease transmission and control strategies."
-              href="/research/disease-modeling"
+              icon={<Leaf className="w-8 h-8" />}
+              title="Precision Agriculture"
+              desc="AI-driven methodologies to optimize crop yields and resource usage in modern farming."
+              href="/research/precision-agriculture"
               delay={0}
             />
             <ResearchCard 
               icon={<Droplets className="w-8 h-8" />}
-              title="Aquatic Ecosystems"
-              desc="Understanding dynamics of aquatic environments and impact of pollutants."
-              href="/research/aquatic-ecosystems"
+              title="Soil Moisture Analytics"
+              desc="Spatial soil moisture patterns using remote sensing for improved irrigation efficiency."
+              href="/research/soil-moisture-analytics"
               delay={0.1}
             />
             <ResearchCard 
-              icon={<Globe className="w-8 h-8" />}
-              title="GHG Emissions"
-              desc="Estimating greenhouse gas emissions from industrial sources."
-              href="/research/ghg-emissions"
+              icon={<CloudRain className="w-8 h-8" />}
+              title="Precipitation Forecasting"
+              desc="High-resolution spatial models for precipitation patterns and agricultural water management."
+              href="/research/precipitation-forecasting"
               delay={0.2}
             />
             <ResearchCard 
-              icon={<Database className="w-8 h-8" />}
-              title="AI & Data Science"
-              desc="Leveraging machine learning for complex pattern recognition in biological data."
-              href="/research/data-science"
+              icon={<MapPin className="w-8 h-8" />}
+              title="Spatial Data Portals"
+              desc="Open-access spatial data platforms for agricultural and environmental monitoring."
+              href="/research/spatial-data"
               delay={0.3}
             />
           </div>
@@ -165,7 +164,7 @@ export default function Home() {
 
       {/* Call to Action */}
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Interested in joining our lab?</h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
@@ -232,7 +231,7 @@ function NewsCard({ item, index }: { item: any, index: number }) {
             </div>
           ) : (
             <div className="aspect-video bg-secondary flex items-center justify-center text-muted-foreground">
-              <Activity className="h-8 w-8 opacity-20" />
+              <Leaf className="h-8 w-8 opacity-20" />
             </div>
           )}
           <div className="p-6 flex flex-col flex-grow">

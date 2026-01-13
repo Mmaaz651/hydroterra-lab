@@ -92,6 +92,12 @@ async function seedDatabase() {
       slug: "precipitation-forecasting",
       imageUrl: "https://images.unsplash.com/photo-1534274988757-a28bf1f539cf?auto=format&fit=crop&q=80"
     });
+    await storage.createResearchArea({
+      title: "Spatial Data Portals",
+      description: "Open-access spatial data platforms providing real-time agricultural and environmental monitoring data, including soil moisture and precipitation maps.",
+      slug: "spatial-data",
+      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+    });
 
     // Team
     await storage.createTeamMember({

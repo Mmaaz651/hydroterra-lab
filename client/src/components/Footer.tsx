@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Atom, Mail, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import { Leaf, Mail, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import upeiLogo from "@assets/upei_logo_1768275866728.png";
 
 export function Footer() {
   return (
@@ -9,13 +10,14 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2 group w-fit">
               <div className="bg-primary/10 p-2 rounded-lg">
-                <Atom className="h-6 w-6 text-primary" />
+                <Leaf className="h-6 w-6 text-primary" />
               </div>
               <span className="text-xl font-bold font-display tracking-tight text-primary">AIMMLab</span>
+              <img src={upeiLogo} alt="UPEI Logo" className="h-10 ml-2" />
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-sm">
-              We design and deploy AI and mathematical methodologies to enhance public health preparedness 
-              and address global socio-ecological challenges.
+              We design and deploy AI and mathematical methodologies to advance sustainable agriculture, 
+              analyze precipitation patterns, monitor soil moisture, and leverage spatial data.
             </p>
             <div className="flex gap-4 pt-2">
               <a href="#" className="p-2 rounded-full bg-background border hover:border-primary/50 text-muted-foreground hover:text-primary transition-colors">
@@ -33,10 +35,10 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-display font-semibold text-foreground text-lg">Research</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/research/disease-modeling" className="hover:text-primary transition-colors">Disease Modeling</Link></li>
-              <li><Link href="/research/aquatic-ecosystems" className="hover:text-primary transition-colors">Aquatic Ecosystems</Link></li>
-              <li><Link href="/research/ghg-emissions" className="hover:text-primary transition-colors">GHG Emissions</Link></li>
-              <li><Link href="/research/data-science" className="hover:text-primary transition-colors">AI & Data Science</Link></li>
+              <li><Link href="/research/precision-agriculture" className="hover:text-primary transition-colors">Precision Agriculture</Link></li>
+              <li><Link href="/research/soil-moisture-analytics" className="hover:text-primary transition-colors">Soil Moisture Analytics</Link></li>
+              <li><Link href="/research/precipitation-forecasting" className="hover:text-primary transition-colors">Precipitation Forecasting</Link></li>
+              <li><Link href="/research/spatial-data" className="hover:text-primary transition-colors">Spatial Data Portals</Link></li>
             </ul>
           </div>
 
@@ -46,8 +48,8 @@ export function Footer() {
               <li className="flex gap-3 items-start">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span>
-                  University of Toronto<br />
-                  Toronto, ON, Canada
+                  University of Prince Edward Island<br />
+                  Charlottetown, PE, Canada
                 </span>
               </li>
               <li className="flex gap-3 items-center">
