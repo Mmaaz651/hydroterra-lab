@@ -75,61 +75,48 @@ async function seedDatabase() {
   if (existingResearch.length === 0) {
     // Research Areas
     await storage.createResearchArea({
-      title: "Disease Modeling",
-      description: "We design and deploy AI and mathematical methodologies to enhance public health preparedness and response to emerging and re-emerging infectious disease outbreaks.",
-      slug: "disease-modeling",
-      imageUrl: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80"
+      title: "Precision Agriculture",
+      description: "We design and deploy AI and mathematical methodologies to optimize crop yields and resource usage in modern farming.",
+      slug: "precision-agriculture",
+      imageUrl: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80"
     });
     await storage.createResearchArea({
-      title: "Aquatic Ecosystem Dynamics",
-      description: "Investigating and mitigating the impact of environmental parameters on aquatic ecosystems using AI and mathematical methodologies.",
-      slug: "aquatic-ecosystem-dynamics",
-      imageUrl: "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&q=80"
+      title: "Soil Moisture Analytics",
+      description: "Investigating spatial soil moisture patterns using remote sensing and sensor networks to improve irrigation efficiency.",
+      slug: "soil-moisture-analytics",
+      imageUrl: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80"
     });
     await storage.createResearchArea({
-      title: "Oil Sands GHG Emissions",
-      description: "Developing methodologies to estimate and forecast greenhouse gas emissions from Oil sands tailings ponds and End Pit Lakes.",
-      slug: "oil-sands-ghg-emissions",
-      imageUrl: "https://images.unsplash.com/photo-1611273426761-53c8577a3c97?auto=format&fit=crop&q=80"
+      title: "Precipitation Forecasting",
+      description: "Developing high-resolution spatial models to forecast precipitation patterns and their impact on agricultural water management.",
+      slug: "precipitation-forecasting",
+      imageUrl: "https://images.unsplash.com/photo-1534274988757-a28bf1f539cf?auto=format&fit=crop&q=80"
     });
 
     // Team
     await storage.createTeamMember({
       name: "Jude Kong",
       role: "Executive Director",
-      bio: "Executive Director: Africa-Canada AI & Data Innovation Consortium; Artificial Intelligence & Math Modelling lab (AIMM lab). Expert in AI, data science, Math Modelling & Math Education.",
+      bio: "Expert in AI-driven sustainable agriculture and mathematical modelling of environmental systems. Leading initiatives in spatial data analytics.",
       imageUrl: "https://images.sociablekit.com/icons/sk-linkedin-profile-user.png",
       linkedin: "https://www.linkedin.com/in/dzevela/"
     });
 
     // News
     await storage.createNews({
-      title: "Exciting Opportunity for Aspiring Postdocs!",
-      content: "The Canada Postdoctoral Research Award Program is now open—a fantastic opportunity to join AIMMLab for a 2-year fully funded postdoctoral position. Award Amount: $70,000/year.",
+      title: "New Spatial Data Portal Launched",
+      content: "We are excited to announce the launch of our new open-access portal for agricultural spatial data, including real-time soil moisture and precipitation maps.",
       date: new Date("2025-06-01"),
-      sourceUrl: "https://aimmlab.org"
-    });
-    await storage.createNews({
-      title: "New Publication on COVID-19 Impact",
-      content: "Disproportionate impact of the COVID-19 pandemic on socially vulnerable communities: The case of Jane and Finch in Toronto, Ontario.",
-      date: new Date("2025-06-15"),
       sourceUrl: "https://aimmlab.org"
     });
 
     // Publications
     await storage.createPublication({
-      title: "Disproportionate impact of the COVID-19 pandemic on socially vulnerable communities",
-      authors: "Jude Kong, Zahra Movahedi Nia, Cheryl Prescod, et al.",
+      title: "Integrating Spatial Sensor Networks for Precision Soil Moisture Mapping",
+      authors: "Jude Kong, et al.",
       year: 2025,
-      venue: "Journal of Public Health",
-      abstract: "Analyzing trends in COVID-19 cases, hospitalizations, and mortality in Jane and Finch community."
-    });
-    await storage.createPublication({
-      title: "Environmental Semantic Clustering-Guided Multimodal Fusion for Enhanced Interpretability in Methane Emission Prediction",
-      authors: "AIMMLab Team",
-      year: 2025,
-      venue: "Preprint",
-      link: "https://lnkd.in/gmCj2rvu"
+      venue: "Sustainable Agriculture Journal",
+      abstract: "This paper explores the use of multimodal data fusion for high-resolution soil moisture estimation."
     });
   }
 }
