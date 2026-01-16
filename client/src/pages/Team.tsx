@@ -14,7 +14,7 @@ export default function Team() {
       role: "Canada Research Chair in Remote Sensing and Water Security",
       bio: "Associate Professor of Climate Change and Adaptation. Expert in remote sensing hydrology, statistical data science, climate change impacts, and water and food security, with extensive experience in AI-driven analysis of large-scale environmental and socio-economic data.",
       imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sara-sadri-ab5370164/",
       twitter: "#",
       website: "#"
     }
