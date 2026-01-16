@@ -10,12 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center group w-fit">
-              <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-12 w-auto object-contain" />
+              <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-14 w-auto object-contain" />
               <div className="flex flex-col justify-center ml-3 pl-3 border-l border-border h-8">
                 <span className="text-base font-bold font-display tracking-tight text-primary">HydroTerra Lab</span>
                 <span className="text-[9px] text-muted-foreground uppercase tracking-widest font-medium">Water & Food Systems</span>
               </div>
-              <img src={upeiLogo} alt="UPEI Logo" className="h-12 w-auto object-contain ml-4" />
+              <img src={upeiLogo} alt="UPEI Logo" className="h-8 w-auto object-contain ml-4" />
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-sm">
               HydroTerra Lab advances data-driven research on water and food systems using satellite remote sensing 

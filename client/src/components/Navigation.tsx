@@ -23,12 +23,12 @@ export function Navigation() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center group">
-            <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-14 w-auto object-contain group-hover:scale-105 transition-transform" />
+            <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-16 w-auto object-contain group-hover:scale-105 transition-transform" />
             <div className="hidden sm:flex flex-col justify-center ml-3 pl-3 border-l border-border h-10">
               <span className="text-base font-bold font-display leading-tight tracking-tight text-primary">HydroTerra Lab</span>
               <span className="text-[9px] text-muted-foreground uppercase tracking-widest font-medium">Water & Food Systems</span>
             </div>
-            <img src={upeiLogo} alt="UPEI Logo" className="h-14 w-auto object-contain ml-4 hidden lg:block" />
+            <img src={upeiLogo} alt="UPEI Logo" className="h-10 w-auto object-contain ml-4 hidden lg:block" />
           </Link>
 
           {/* Desktop Nav */}
