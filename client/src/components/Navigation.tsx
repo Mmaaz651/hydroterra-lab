@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import upeiLogo from "@assets/upei_logo_1768275866728.png";
-import hydroTerraLogo from "@assets/HydroTerra_1768527677695.png";
+import hydroTerraLogo from "@assets/HydroTerra_1768538920331.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -22,13 +22,13 @@ export function Navigation() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-4 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-16 w-auto group-hover:scale-105 transition-transform" />
-            <div className="hidden sm:block border-l border-border pl-4">
+            <div className="hidden sm:block border-l border-border pl-2">
               <span className="text-lg font-bold font-display leading-tight tracking-tight text-primary block">HydroTerra Lab</span>
               <span className="text-[9px] text-muted-foreground uppercase tracking-wider font-medium">Water & Food Systems</span>
             </div>
-            <img src={upeiLogo} alt="UPEI Logo" className="h-14 w-auto ml-2 hidden lg:block" />
+            <img src={upeiLogo} alt="UPEI Logo" className="h-10 w-auto ml-2 hidden lg:block" />
           </Link>
 
           {/* Desktop Nav */}
