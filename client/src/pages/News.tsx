@@ -10,14 +10,14 @@ export default function News() {
     {
       id: 1,
       title: "Exciting Opportunity for Aspiring Postdocs!",
-      content: "The Canada Postdoctoral Research Award Program is now open—a fantastic opportunity to join AIMMLab or another lab in Canada for a 2-year fully funded postdoctoral position. Open to International researchers. Award Amount: $70,000/year.",
+      content: "The Canada Postdoctoral Research Award Program is now open—a fantastic opportunity to join HydroTerra Lab or another lab in Canada for a 2-year fully funded postdoctoral position. Open to International researchers. Award Amount: $70,000/year.",
       date: new Date().toISOString(),
-      imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2000&auto=format&fit=crop" // Education/research
+      imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2000&auto=format&fit=crop"
     },
     {
       id: 2,
-      title: "Latest Publication: Disproportionate impact of COVID-19",
-      content: "So happy to share our latest publication investigating the impact of the pandemic on socially vulnerable communities in Toronto.",
+      title: "New Satellite-Based Soil Moisture Dataset Released",
+      content: "We are excited to announce the release of our high-resolution soil moisture dataset covering agricultural regions across Prince Edward Island.",
       date: new Date(Date.now() - 86400000 * 5).toISOString(),
       imageUrl: null
     }
@@ -56,7 +56,7 @@ export default function News() {
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center bg-primary/5 text-primary/20 font-display text-4xl font-bold">
-                        AIMMLab
+                        HydroTerra
                       </div>
                     )}
                     <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm">

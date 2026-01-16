@@ -1,9 +1,10 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Link } from "wouter";
-import { ArrowRight, Leaf, CloudRain, Droplets, MapPin, ChevronRight } from "lucide-react";
+import { ArrowRight, Droplets, Satellite, Wheat, AlertTriangle, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useNewsList, useResearchAreas } from "@/hooks/use-lab-data";
 import { Skeleton } from "@/components/ui/skeleton";
+import hydroTerraLogo from "@assets/HydroTerra_1768527677695.png";
 
 export default function Home() {
   const { data: news, isLoading: newsLoading } = useNewsList();
@@ -26,14 +27,15 @@ export default function Home() {
               className="space-y-6"
             >
               <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium tracking-wide">
-                Welcome to AIMMLab
+                Welcome to HydroTerra Lab
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-[1.1] tracking-tight">
-                AI for Sustainable Agriculture & Climate Resilience
+                Data-Driven Research on Water & Food Systems
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-xl">
-                We design and deploy AI and mathematical methodologies to advance precision agriculture, 
-                analyze precipitation patterns, monitor soil moisture, and leverage spatial data for sustainable food systems.
+                We advance research using satellite remote sensing and geospatial analytics. 
+                We develop models of soil moisture, drought, food security, and agricultural water stress, 
+                translating Earth observations into actionable insights.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link href="/research">
@@ -72,11 +74,11 @@ export default function Home() {
                  </svg>
 
                  <div className="relative text-center space-y-4">
-                   <div className="mx-auto w-24 h-24 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
-                     <Leaf className="w-10 h-10 text-white" />
+                   <div className="mx-auto w-28 h-28 flex items-center justify-center">
+                     <img src={hydroTerraLogo} alt="HydroTerra Lab" className="w-full h-full object-contain" />
                    </div>
-                   <h3 className="text-2xl font-display font-semibold">Data Driven Agriculture</h3>
-                   <p className="text-sm text-white/70">Bridging spatial data and sustainable farming</p>
+                   <h3 className="text-2xl font-display font-semibold">Satellite Remote Sensing</h3>
+                   <p className="text-sm text-white/70">Earth observations for governments, farmers & communities</p>
                  </div>
                </div>
             </motion.div>
@@ -89,37 +91,37 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader 
             title="Our Research Areas" 
-            subtitle="We focus on developing novel methodologies for sustainable agriculture and climate resilience."
+            subtitle="We develop data-driven solutions for water and food systems using satellite remote sensing and geospatial analytics."
             align="center"
           />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ResearchCard 
-              icon={<Leaf className="w-8 h-8" />}
-              title="Precision Agriculture"
-              desc="AI-driven methodologies to optimize crop yields and resource usage in modern farming."
-              href="/research/precision-agriculture"
+              icon={<Droplets className="w-8 h-8" />}
+              title="Soil Moisture Modeling"
+              desc="Advanced remote sensing models for mapping and predicting soil moisture across agricultural landscapes."
+              href="/research/soil-moisture"
               delay={0}
             />
             <ResearchCard 
-              icon={<Droplets className="w-8 h-8" />}
-              title="Soil Moisture Analytics"
-              desc="Spatial soil moisture patterns using remote sensing for improved irrigation efficiency."
-              href="/research/soil-moisture-analytics"
+              icon={<AlertTriangle className="w-8 h-8" />}
+              title="Drought Monitoring"
+              desc="Real-time drought detection and forecasting using satellite observations and climate data."
+              href="/research/drought-monitoring"
               delay={0.1}
             />
             <ResearchCard 
-              icon={<CloudRain className="w-8 h-8" />}
-              title="Precipitation Forecasting"
-              desc="High-resolution spatial models for precipitation patterns and agricultural water management."
-              href="/research/precipitation-forecasting"
+              icon={<Wheat className="w-8 h-8" />}
+              title="Food Security"
+              desc="Geospatial analysis of crop health, yield prediction, and food system resilience."
+              href="/research/food-security"
               delay={0.2}
             />
             <ResearchCard 
-              icon={<MapPin className="w-8 h-8" />}
-              title="Spatial Data Portals"
-              desc="Open-access spatial data platforms for agricultural and environmental monitoring."
-              href="/research/spatial-data"
+              icon={<Satellite className="w-8 h-8" />}
+              title="Agricultural Water Stress"
+              desc="Satellite-based monitoring of water stress indicators for irrigation management."
+              href="/research/water-stress"
               delay={0.3}
             />
           </div>
@@ -231,7 +233,7 @@ function NewsCard({ item, index }: { item: any, index: number }) {
             </div>
           ) : (
             <div className="aspect-video bg-secondary flex items-center justify-center text-muted-foreground">
-              <Leaf className="h-8 w-8 opacity-20" />
+              <Droplets className="h-8 w-8 opacity-20" />
             </div>
           )}
           <div className="p-6 flex flex-col flex-grow">

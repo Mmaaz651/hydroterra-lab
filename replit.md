@@ -1,8 +1,8 @@
-# AIMMLab - AI for Sustainable Agriculture & Climate Resilience
+# HydroTerra Lab - Water & Food Systems Research
 
 ## Overview
 
-AIMMLab is a research laboratory website for the AI and Mathematical Modeling Lab at UPEI (University of Prince Edward Island). The platform showcases research in precision agriculture, soil moisture analytics, precipitation forecasting, and spatial data analysis. It serves as a public-facing site for displaying publications, team members, news updates, and research areas, with a contact form for prospective collaborators and students.
+HydroTerra Lab is a research laboratory website at UPEI (University of Prince Edward Island) that advances data-driven research on water and food systems using satellite remote sensing and geospatial analytics. The lab develops models of soil moisture, drought, food security, and agricultural water stress, translating Earth observations into actionable insights for governments, farmers, and communities. The platform showcases research areas, publications, team members, and news updates, with a contact form for prospective collaborators and students.
 
 ## User Preferences
 

@@ -75,54 +75,54 @@ async function seedDatabase() {
   if (existingResearch.length === 0) {
     // Research Areas
     await storage.createResearchArea({
-      title: "Precision Agriculture",
-      description: "We design and deploy AI and mathematical methodologies to optimize crop yields and resource usage in modern farming.",
-      slug: "precision-agriculture",
-      imageUrl: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80"
-    });
-    await storage.createResearchArea({
-      title: "Soil Moisture Analytics",
-      description: "Investigating spatial soil moisture patterns using remote sensing and sensor networks to improve irrigation efficiency.",
-      slug: "soil-moisture-analytics",
+      title: "Soil Moisture Modeling",
+      description: "Advanced remote sensing models for mapping and predicting soil moisture across agricultural landscapes using satellite observations and machine learning.",
+      slug: "soil-moisture",
       imageUrl: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80"
     });
     await storage.createResearchArea({
-      title: "Precipitation Forecasting",
-      description: "Developing high-resolution spatial models to forecast precipitation patterns and their impact on agricultural water management.",
-      slug: "precipitation-forecasting",
-      imageUrl: "https://images.unsplash.com/photo-1534274988757-a28bf1f539cf?auto=format&fit=crop&q=80"
+      title: "Drought Monitoring",
+      description: "Real-time drought detection and forecasting using satellite observations, climate data, and geospatial analytics to support early warning systems.",
+      slug: "drought-monitoring",
+      imageUrl: "https://images.unsplash.com/photo-1594583293559-cc6d9b5d6f3e?auto=format&fit=crop&q=80"
     });
     await storage.createResearchArea({
-      title: "Spatial Data Portals",
-      description: "Open-access spatial data platforms providing real-time agricultural and environmental monitoring data, including soil moisture and precipitation maps.",
-      slug: "spatial-data",
-      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+      title: "Food Security",
+      description: "Geospatial analysis of crop health, yield prediction, and food system resilience to support governments and communities in food security planning.",
+      slug: "food-security",
+      imageUrl: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80"
+    });
+    await storage.createResearchArea({
+      title: "Agricultural Water Stress",
+      description: "Satellite-based monitoring of water stress indicators for irrigation management and agricultural water resource optimization.",
+      slug: "water-stress",
+      imageUrl: "https://images.unsplash.com/photo-1534274988757-a28bf1f539cf?auto=format&fit=crop&q=80"
     });
 
     // Team
     await storage.createTeamMember({
       name: "Jude Kong",
       role: "Executive Director",
-      bio: "Expert in AI-driven sustainable agriculture and mathematical modelling of environmental systems. Leading initiatives in spatial data analytics.",
+      bio: "Expert in satellite remote sensing and geospatial analytics for water and food systems research. Leading initiatives in drought monitoring and food security.",
       imageUrl: "https://images.sociablekit.com/icons/sk-linkedin-profile-user.png",
       linkedin: "https://www.linkedin.com/in/dzevela/"
     });
 
     // News
     await storage.createNews({
-      title: "New Spatial Data Portal Launched",
-      content: "We are excited to announce the launch of our new open-access portal for agricultural spatial data, including real-time soil moisture and precipitation maps.",
+      title: "New Satellite-Based Soil Moisture Dataset Released",
+      content: "We are excited to announce the release of our high-resolution soil moisture dataset covering agricultural regions, derived from satellite remote sensing observations.",
       date: new Date("2025-06-01"),
-      sourceUrl: "https://aimmlab.org"
+      sourceUrl: "https://hydroterra.org"
     });
 
     // Publications
     await storage.createPublication({
-      title: "Integrating Spatial Sensor Networks for Precision Soil Moisture Mapping",
+      title: "Satellite Remote Sensing for Agricultural Drought Monitoring: A Multi-Sensor Approach",
       authors: "Jude Kong, et al.",
       year: 2025,
-      venue: "Sustainable Agriculture Journal",
-      abstract: "This paper explores the use of multimodal data fusion for high-resolution soil moisture estimation."
+      venue: "Remote Sensing of Environment",
+      abstract: "This paper explores the integration of multiple satellite sensors for improved drought detection and agricultural water stress assessment."
     });
   }
 }

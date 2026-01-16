@@ -1,6 +1,7 @@
 import { Link } from "wouter";
-import { Leaf, Mail, MapPin, Twitter, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Twitter, Linkedin, Github } from "lucide-react";
 import upeiLogo from "@assets/upei_logo_1768275866728.png";
+import hydroTerraLogo from "@assets/HydroTerra_1768527677695.png";
 
 export function Footer() {
   return (
@@ -8,16 +9,14 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
-              <div className="bg-primary/10 p-2 rounded-lg">
-                <Leaf className="h-6 w-6 text-primary" />
-              </div>
-              <span className="text-xl font-bold font-display tracking-tight text-primary">AIMMLab</span>
+            <Link href="/" className="flex items-center gap-3 group w-fit">
+              <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-12" />
+              <span className="text-xl font-bold font-display tracking-tight text-primary">HydroTerra Lab</span>
               <img src={upeiLogo} alt="UPEI Logo" className="h-10 ml-2" />
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-sm">
-              We design and deploy AI and mathematical methodologies to advance sustainable agriculture, 
-              analyze precipitation patterns, monitor soil moisture, and leverage spatial data.
+              HydroTerra Lab advances data-driven research on water and food systems using satellite remote sensing 
+              and geospatial analytics. We develop models of soil moisture, drought, food security, and agricultural water stress.
             </p>
             <div className="flex gap-4 pt-2">
               <a href="#" className="p-2 rounded-full bg-background border hover:border-primary/50 text-muted-foreground hover:text-primary transition-colors">
@@ -35,10 +34,10 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-display font-semibold text-foreground text-lg">Research</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/research/precision-agriculture" className="hover:text-primary transition-colors">Precision Agriculture</Link></li>
-              <li><Link href="/research/soil-moisture-analytics" className="hover:text-primary transition-colors">Soil Moisture Analytics</Link></li>
-              <li><Link href="/research/precipitation-forecasting" className="hover:text-primary transition-colors">Precipitation Forecasting</Link></li>
-              <li><Link href="/research/spatial-data" className="hover:text-primary transition-colors">Spatial Data Portals</Link></li>
+              <li><Link href="/research/soil-moisture" className="hover:text-primary transition-colors">Soil Moisture Modeling</Link></li>
+              <li><Link href="/research/drought-monitoring" className="hover:text-primary transition-colors">Drought Monitoring</Link></li>
+              <li><Link href="/research/food-security" className="hover:text-primary transition-colors">Food Security</Link></li>
+              <li><Link href="/research/water-stress" className="hover:text-primary transition-colors">Agricultural Water Stress</Link></li>
             </ul>
           </div>
 
@@ -54,8 +53,8 @@ export function Footer() {
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:contact@aimmlab.org" className="hover:text-primary hover:underline transition-colors">
-                  contact@aimmlab.org
+                <a href="mailto:contact@hydroterra.org" className="hover:text-primary hover:underline transition-colors">
+                  contact@hydroterra.org
                 </a>
               </li>
             </ul>
@@ -63,7 +62,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} AIMMLab. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} HydroTerra Lab. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary">Privacy Policy</a>
             <a href="#" className="hover:text-primary">Terms of Service</a>

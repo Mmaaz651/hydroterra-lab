@@ -84,7 +84,7 @@ export default function JoinUs() {
                   <span className="bg-secondary text-secondary-foreground text-xs px-2 py-1 rounded-full font-bold">ONGOING</span>
                 </div>
                 <p className="text-muted-foreground">
-                  We welcome applications from motivated students interested in mathematical biology, disease modeling, and AI applications.
+                  We welcome applications from motivated students interested in satellite remote sensing, geospatial analytics, and water/food systems research.
                 </p>
               </div>
             </section>
@@ -98,7 +98,7 @@ export default function JoinUs() {
                 <div>
                   <h4 className="font-bold text-foreground">General Inquiries</h4>
                   <p className="mb-2">For general questions about the lab or our research:</p>
-                  <a href="mailto:contact@aimmlab.org" className="text-primary hover:underline">contact@aimmlab.org</a>
+                  <a href="mailto:contact@hydroterra.org" className="text-primary hover:underline">contact@hydroterra.org</a>
                 </div>
               </div>
             </section>
