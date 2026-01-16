@@ -9,13 +9,13 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
-              <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-14" />
-              <div className="border-l border-border pl-2">
-                <span className="text-lg font-bold font-display tracking-tight text-primary block">HydroTerra Lab</span>
-                <span className="text-[9px] text-muted-foreground uppercase tracking-wider font-medium">Water & Food Systems</span>
+            <Link href="/" className="flex items-center group w-fit">
+              <img src={hydroTerraLogo} alt="HydroTerra Lab Logo" className="h-12 w-auto object-contain" />
+              <div className="flex flex-col justify-center ml-3 pl-3 border-l border-border h-8">
+                <span className="text-base font-bold font-display tracking-tight text-primary">HydroTerra Lab</span>
+                <span className="text-[9px] text-muted-foreground uppercase tracking-widest font-medium">Water & Food Systems</span>
               </div>
-              <img src={upeiLogo} alt="UPEI Logo" className="h-8 ml-2" />
+              <img src={upeiLogo} alt="UPEI Logo" className="h-12 w-auto object-contain ml-4" />
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-sm">
               HydroTerra Lab advances data-driven research on water and food systems using satellite remote sensing 
