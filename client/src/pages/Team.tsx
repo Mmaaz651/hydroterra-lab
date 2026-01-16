@@ -10,29 +10,13 @@ export default function Team() {
   const fallbackTeam = [
     {
       id: 1,
-      name: "Dr. Jude Kong",
-      role: "Principal Investigator",
-      bio: "Executive Director: Africa-Canada AI & Data Innovation Consortium; Professor at York University.",
-      imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop", // Professional headshot
+      name: "Sara Sadri, Ph.D., P.Eng., C.R.C.",
+      role: "Canada Research Chair in Remote Sensing and Water Security",
+      bio: "Associate Professor of Climate Change and Adaptation. Expert in remote sensing hydrology, statistical data science, climate change impacts, and water and food security, with extensive experience in AI-driven analysis of large-scale environmental and socio-economic data.",
+      imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
       linkedin: "#",
       twitter: "#",
       website: "#"
-    },
-    {
-      id: 2,
-      name: "Jane Doe",
-      role: "Postdoctoral Researcher",
-      bio: "Expert in stochastic modeling and infectious disease dynamics.",
-      imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop", // Professional headshot
-      linkedin: "#"
-    },
-    {
-      id: 3,
-      name: "John Smith",
-      role: "PhD Candidate",
-      bio: "Researching AI applications in environmental monitoring.",
-      imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop", // Professional headshot
-      linkedin: "#"
     }
   ];
 

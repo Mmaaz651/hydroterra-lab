@@ -4,7 +4,6 @@ import { ArrowRight, Droplets, Satellite, Wheat, AlertTriangle, ChevronRight } f
 import { motion } from "framer-motion";
 import { useNewsList, useResearchAreas } from "@/hooks/use-lab-data";
 import { Skeleton } from "@/components/ui/skeleton";
-import hydroTerraLogo from "@assets/HydroTerra_1768527677695.png";
 
 export default function Home() {
   const { data: news, isLoading: newsLoading } = useNewsList();
@@ -74,8 +73,8 @@ export default function Home() {
                  </svg>
 
                  <div className="relative text-center space-y-4">
-                   <div className="mx-auto w-28 h-28 flex items-center justify-center">
-                     <img src={hydroTerraLogo} alt="HydroTerra Lab" className="w-full h-full object-contain" />
+                   <div className="mx-auto w-20 h-20 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                     <Satellite className="w-10 h-10 text-white" />
                    </div>
                    <h3 className="text-2xl font-display font-semibold">Satellite Remote Sensing</h3>
                    <p className="text-sm text-white/70">Earth observations for governments, farmers & communities</p>

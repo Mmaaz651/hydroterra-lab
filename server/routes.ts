@@ -84,7 +84,7 @@ async function seedDatabase() {
       title: "Drought Monitoring",
       description: "Real-time drought detection and forecasting using satellite observations, climate data, and geospatial analytics to support early warning systems.",
       slug: "drought-monitoring",
-      imageUrl: "https://images.unsplash.com/photo-1594583293559-cc6d9b5d6f3e?auto=format&fit=crop&q=80"
+      imageUrl: "https://images.unsplash.com/photo-1504297050568-910d24c426d3?auto=format&fit=crop&q=80"
     });
     await storage.createResearchArea({
       title: "Food Security",
@@ -101,11 +101,11 @@ async function seedDatabase() {
 
     // Team
     await storage.createTeamMember({
-      name: "Jude Kong",
-      role: "Executive Director",
-      bio: "Expert in satellite remote sensing and geospatial analytics for water and food systems research. Leading initiatives in drought monitoring and food security.",
-      imageUrl: "https://images.sociablekit.com/icons/sk-linkedin-profile-user.png",
-      linkedin: "https://www.linkedin.com/in/dzevela/"
+      name: "Sara Sadri, Ph.D., P.Eng., C.R.C.",
+      role: "Canada Research Chair in Remote Sensing and Water Security",
+      bio: "Associate Professor of Climate Change and Adaptation. Expert in remote sensing hydrology, statistical data science, climate change impacts, and water and food security, with extensive experience in AI-driven analysis of large-scale environmental and socio-economic data.",
+      imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop",
+      linkedin: "#"
     });
 
     // News
